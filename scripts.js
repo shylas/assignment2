@@ -6,11 +6,13 @@ function numberCounter(){
     if(isNaN(number)==false){
       allNumbers.push(number);
       console.log(allNumbers);
-      document.getElementById("number-count").innerHTML = allNumbers.length;
+      //document.getElementById("number-count").innerHTML = allNumbers.length;
+      $("#number-count").html(allNumbers.length);
     } else{
       allStrings.push(number);
       console.log(allStrings);
-      document.getElementById("string-count").innerHTML = allStrings.length;
+      //document.getElementById("string-count").innerHTML = allStrings.length;
+      $("#string-count").html(allStrings.length);
     }
  
   event.preventDefault();
@@ -25,7 +27,8 @@ function getSum() {
       count += intValue; 
     }
   var total = count.toString();
-    document.getElementById("sum").innerHTML = total;
+    //document.getElementById("sum").innerHTML = total;
+    $("#sum").html(total);
     console.log(total);
   
 }
@@ -40,13 +43,15 @@ function getAverage(){
     }
   count = count/allNumbers.length;
   var total = count.toString();
-  document.getElementById("average").innerHTML = total;
+  //document.getElementById("average").innerHTML = total;
+  $("#average").html(total);
   console.log(total);
 }  
 
 function concatStrings(){
   var stringGroup = allStrings.join(" ");
-  document.getElementById("all-strings").innerHTML = stringGroup;
+  //document.getElementById("all-strings").innerHTML = stringGroup;
+  $("#all-strings").html(stringGroup);
   console.log(stringGroup);
 }
 
