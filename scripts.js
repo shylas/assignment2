@@ -2,7 +2,8 @@ var allNumbers = [];
 var allStrings = [];
 
 function numberCounter(){
-  var number = document.numberForm.numberinput.value;
+  //var number = document.numberForm.numberinput.value;
+  var number = $("#numberinput").val();
     if(isNaN(number)==false){
       allNumbers.push(number);
       console.log(allNumbers);
@@ -23,7 +24,7 @@ function getSum() {
     for(var i=0; i < allNumbers.length; i++) 
     { 
       
-      var intValue = parseInt(allNumbers[i]);
+      var intValue = parseFloat(allNumbers[i]);
       count += intValue; 
     }
   var total = count.toString();
@@ -38,7 +39,7 @@ function getAverage(){
     for(var i=0; i < allNumbers.length; i++) 
     { 
       
-      var intValue = parseInt(allNumbers[i]);
+      var intValue = parseFloat(allNumbers[i]);
       count += intValue; 
     }
   count = count/allNumbers.length;
