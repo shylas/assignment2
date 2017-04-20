@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <title>Number Form</title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+  
+    <h1>Number and Text Form</h1>
+    
+    <form onsubmit="numberCounter() & getSum() & getAverage() & concatStrings()" name="numberForm">
+      <label>Enter numbers or text here:
+        <input type= "textarea" name= "numberinput" value="">
+      </label>
+      <input type ="submit" value="Submit">
+      <input type="reset" value="Reset" onclick="arrayReset()">
+    </form>
+    
+    <p>Number Count: <span id ="number-count"></span></p>
+    
+    <p>Sum: <span id="sum"></span></p>
+    
+    <p>Average: <span id="average"></span></p>
+    
+    <p>String Count: <span id ="string-count"></span></p>
+    
+    <p>Concatenated String: <span id ="all-strings"></span></p>
+    
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>  
+  <script type="text/javascript" src="scripts.js"></script>
+  </body>
+</html>
+
