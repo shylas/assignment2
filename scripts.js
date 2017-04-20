@@ -53,11 +53,16 @@ function concatStrings(){
 function arrayReset(){
   allNumbers = [];
   allStrings = [];
-  document.getElementById("number-count").innerHTML = 0;
-  document.getElementById("sum").innerHTML = 0;
-  document.getElementById("average").innerHTML = 0;
-  document.getElementById("string-count").innerHTML = 0;
-  document.getElementById("all-strings").innerHTML = 0;
+  //document.getElementById("number-count").innerHTML = 0;
+  $("#number-count").html("0");
+  //document.getElementById("sum").innerHTML = 0;
+  $("#sum").html("0");
+  //document.getElementById("average").innerHTML = 0;
+  $("#average").html("0");
+  //document.getElementById("string-count").innerHTML = 0;
+  $("#string-count").html("0");
+  //document.getElementById("all-strings").innerHTML = 0;
+  $("#all-strings").html("Empty");
   
 }
 
